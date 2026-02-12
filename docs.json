@@ -9,20 +9,6 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Home",
-          "icon": "house",
-          "href": "https://usecardboard.com"
-        },
-        {
-          "anchor": "App",
-          "icon": "play",
-          "href": "https://usecardboard.com/app/home"
-        }
-      ]
-    },
     "tabs": [
       {
         "tab": "Docs",
