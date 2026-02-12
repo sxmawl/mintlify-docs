@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Cardboard Docs",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -13,49 +13,65 @@
       "anchors": [
         {
           "anchor": "Home",
-          "icon": "newspaper",
-          "color": {
-            "light": "#2750b2",
-            "dark": "#2750b2"
-          },
+          "icon": "house",
           "href": "https://usecardboard.com"
+        },
+        {
+          "anchor": "App",
+          "icon": "play",
+          "href": "https://app.usecardboard.com"
         }
       ]
     },
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Docs",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "getting-started/quickstart",
+              "getting-started/editor-overview"
             ]
           },
           {
-            "group": "Customization",
+            "group": "AI Editing",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "ai-editing/ai-chat",
+              "ai-editing/ai-prompts-guide",
+              "ai-editing/captions",
+              "ai-editing/voiceovers"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Editing Tools",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "editing/timeline",
+              "editing/media-library",
+              "editing/effects-and-transitions",
+              "editing/music-and-audio"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Exporting & Sharing",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "export/export-your-video",
+              "export/formats-and-quality"
+            ]
+          },
+          {
+            "group": "Account & Billing",
+            "pages": [
+              "account/plans-and-pricing",
+              "account/manage-your-account"
+            ]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "support/faq",
+              "support/troubleshooting"
             ]
           }
         ]
@@ -70,32 +86,18 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:founders@usecardboard.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Open Cardboard",
+      "href": "https://app.usecardboard.com"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/usecardboard"
     }
   }
 }
