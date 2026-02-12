@@ -90,5 +90,8 @@
     "family": "Geist",
     "weight": 400,
     "format": "woff"
+  },
+  "appearance": {
+    "strict": true
   }
 }
