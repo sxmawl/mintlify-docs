@@ -19,7 +19,7 @@
         {
           "anchor": "App",
           "icon": "play",
-          "href": "https://app.usecardboard.com"
+          "href": "https://usecardboard.com/app/home"
         }
       ]
     },
@@ -92,7 +92,7 @@
     "primary": {
       "type": "button",
       "label": "Open Cardboard",
-      "href": "https://app.usecardboard.com"
+      "href": "https://usecardboard.com/app/home"
     }
   },
   "footer": {
