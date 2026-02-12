@@ -9,6 +9,19 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Home",
+          "icon": "newspaper",
+          "color": {
+            "light": "#2750b2",
+            "dark": "#2750b2"
+          },
+          "href": "https://usecardboard.com"
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Guides",
@@ -67,21 +80,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
