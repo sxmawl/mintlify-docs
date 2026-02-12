@@ -3,17 +3,94 @@ title: Media Library & Search
 description: Upload, organize, and search your media files.
 ---
 
-<Note>
-  This page is coming soon. For a quick overview of the media library, see [The Editor Layout](/getting-started/editor-overview).
-</Note>
+The **Media Library** is the left panel of the editor. It holds all the files you have imported into your project — videos, images, and audio. You can browse, preview, and drag media onto the timeline to start editing.
 
-Want this page sooner? Let us know at [founders@usecardboard.com](mailto:founders@usecardboard.com).
+## Importing media
+
+<Steps>
+  <Step title="Open the import dialog">
+    Click the **Import** button at the top of the Media Library, or drag files directly from your computer into the panel.
+  </Step>
+
+  <Step title="Choose your files">
+    Select one or more files. Cardboard supports video (MP4, WebM, MOV, MKV), audio (MP3, WAV, AAC), and images (PNG, JPG, GIF, WebP).
+  </Step>
+
+  <Step title="Wait for processing">
+    After import, Cardboard automatically processes your files in the background. This includes generating thumbnails, transcribing speech, analyzing video content, creating waveforms, and building search embeddings — all in parallel.
+  </Step>
+
+  <Step title="Drag to timeline">
+    Once imported, drag any file from the Media Library onto the timeline to add it to your project.
+  </Step>
+</Steps>
+
+## Browsing and organizing
+
+- **Grid view** — See thumbnails of all your media at a glance
+- **List view** — See file names, durations, and types in a compact list
+- **Hover preview** — Hover over any video thumbnail to scrub through a preview
+- **Search bar** — Type to filter by file name or use semantic search to find content
+
+## Semantic search
+
+Cardboard automatically analyzes your media on import, which means you can search by what is *in* the content — not just file names.
+
+<Tabs>
+  <Tab title="Visual search">
+    Search by what you see in the video. Cardboard uses AI video analysis to understand the visual content of every clip.
+
+    **Example searches:**
+    - "city skyline"
+    - "person holding a phone"
+    - "outdoor nature shots"
+    - "close-up of a face"
+  </Tab>
+
+  <Tab title="Speech search">
+    Search by what is being said. Cardboard transcribes all spoken audio automatically.
+
+    **Example searches:**
+    - "mentions pricing"
+    - "talks about the product launch"
+    - "introduces the team"
+  </Tab>
+
+  <Tab title="Music & sound">
+    Search by the type of audio in a clip — music genre, sound effects, or ambient sounds.
+
+    **Example searches:**
+    - "upbeat music"
+    - "applause"
+    - "typing sounds"
+  </Tab>
+</Tabs>
+
+<Tip>
+  You can also search from the AI Chat panel — try "Find all shots where someone is talking to camera" or "Show me the clips with outdoor scenery."
+</Tip>
+
+## What gets analyzed
+
+When you import a file, Cardboard runs several AI processes in the background:
+
+| Analysis | What it does | Used for |
+| --- | --- | --- |
+| **Thumbnails** | Generates preview frames | Grid view, hover preview |
+| **Transcription** | Converts speech to text with word-level timestamps | Speech search, captions |
+| **Video analysis** | Identifies scenes, objects, and actions | Visual search, AI editing |
+| **Waveform** | Creates an audio waveform visualization | Timeline display |
+| **Embeddings** | Builds semantic vectors for content | Semantic search |
+
+All of this happens automatically and in parallel. You can start editing immediately while processing completes in the background.
+
+## What's next?
 
 <CardGroup cols={2}>
-  <Card title="The Editor Layout" icon="table-columns" href="/getting-started/editor-overview">
-    See where the media library fits in the editor.
+  <Card title="Timeline Editing" icon="timeline" href="/editing/timeline">
+    Learn how to arrange clips on the timeline.
   </Card>
   <Card title="Your First Video in 5 Minutes" icon="rocket" href="/getting-started/quickstart">
-    Learn how to upload and use media in the quickstart guide.
+    Follow the quickstart guide to make your first edit.
   </Card>
 </CardGroup>

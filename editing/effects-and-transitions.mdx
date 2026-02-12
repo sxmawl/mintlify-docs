@@ -3,17 +3,84 @@ title: Effects, Transitions & Color
 description: Add transitions, effects, color grading, and text overlays to your videos.
 ---
 
-<Note>
-  This page is coming soon. In the meantime, you can add effects and transitions by typing prompts like "Add a fade transition between every clip" or "Apply a cinematic color grade" in the **AI Chat** panel.
-</Note>
+Cardboard includes a library of transitions, color grading presets, and keyframe animation tools to give your videos a polished look. You can apply them manually from the editor or use AI Chat to add them with a simple prompt.
 
-Want this page sooner? Let us know at [founders@usecardboard.com](mailto:founders@usecardboard.com).
+## Transitions
+
+Add transitions between clips to smooth out cuts. Cardboard includes **14 transition presets** across three categories.
+
+<Tabs>
+  <Tab title="Cinematic">
+    - **Fade** — Classic fade to/from black
+    - **Dissolve** — One clip blends smoothly into the next
+    - **Light Leak** — Bright light bloom during the transition
+    - **Film Burn** — Analog film burn effect
+    - **Cross Zoom** — Zoom-based cross dissolve
+  </Tab>
+
+  <Tab title="Motion">
+    - **Fly** — Clip flies in from a direction
+    - **Push** — New clip pushes the old one off screen
+    - **Slide** — Clip slides in from the side
+    - **Zoom** — Zoom in on the cut point
+    - **Radial Wipe** — Circular wipe reveal
+  </Tab>
+
+  <Tab title="Creative">
+    - **Glitch** — Digital glitch distortion
+    - **Chromatic Aberration** — RGB color split effect
+    - **Ink Bleed** — Ink spreading across the frame
+    - **Audio Fade** — Fades only the audio (no visual transition)
+  </Tab>
+</Tabs>
+
+Each transition has configurable properties:
+
+- **Duration** — How long the transition lasts (in seconds)
+- **Direction** — Where applicable, which direction the transition moves (left, right, up, down)
+- **Easing** — The acceleration curve (ease in, ease out, linear)
+
+To apply a transition, drag it from the transitions panel onto the cut point between two clips.
+
+## Color grading and LUTs
+
+Color grading changes the overall look and feel of your video. Cardboard includes **6 LUT presets** you can apply to any clip or adjustment layer.
+
+| Preset | Description |
+| --- | --- |
+| **Cinematic** | Warm shadows, teal highlights — the Hollywood look |
+| **Black & White** | Full desaturation with enhanced contrast |
+| **Vintage** | Faded colors with a warm, retro tone |
+| **Cool** | Blue-shifted tones for a clean, modern feel |
+| **Warm** | Golden, sun-kissed tones |
+| **High Contrast** | Deeper blacks and brighter whites |
+
+LUTs are applied via **adjustment layers** that sit above your clips on the timeline. You can control the intensity from **0** (no effect) to **1** (full strength) to dial in the exact look you want.
+
+## Keyframe animation
+
+Animate any clip property over time using keyframes. Set a value at one point, a different value at another, and Cardboard smoothly interpolates between them.
+
+Properties you can animate:
+
+- **Opacity** — Fade clips in and out
+- **Scale** — Zoom in or out over time
+- **Rotation** — Spin or tilt a clip
+- **X / Y position** — Move a clip across the frame
+
+To add a keyframe, move the playhead to where you want the animation to start, set your property value, then move ahead and set a new value. Cardboard creates a smooth animation between the two points.
+
+<Tip>
+  You can use AI Chat for effects too — try "Add a fade transition between every clip", "Apply cinematic color grade", or "Zoom in on the subject over 2 seconds."
+</Tip>
+
+## What's next?
 
 <CardGroup cols={2}>
-  <Card title="Editing with AI Chat" icon="wand-magic-sparkles" href="/ai-editing/ai-chat">
-    Use AI to add effects and transitions with a single command.
+  <Card title="Music & Audio" icon="music" href="/editing/music-and-audio">
+    Add background music and sound effects.
   </Card>
   <Card title="AI Prompts Cheat Sheet" icon="list-check" href="/ai-editing/ai-prompts-guide">
-    Copy-paste prompt recipes for effects, transitions, and more.
+    Copy-paste prompt recipes for effects and transitions.
   </Card>
 </CardGroup>

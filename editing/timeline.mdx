@@ -3,15 +3,127 @@ title: Timeline Editing
 description: Add, trim, split, and rearrange clips on the timeline.
 ---
 
-<Note>
-  This page is coming soon. For a quick overview of the timeline, see [The Editor Layout](/getting-started/editor-overview).
-</Note>
+The **Timeline** is where you assemble your video. It runs along the bottom of the editor and holds all your clips, audio, and captions in a multi-track layout. You can drag, trim, split, and rearrange clips to build your edit.
 
-Want this page sooner? Let us know at [founders@usecardboard.com](mailto:founders@usecardboard.com).
+## Clip operations
+
+<Steps>
+  <Step title="Add a clip">
+    Drag any file from the **Media Library** onto the timeline to add it. New clips are placed at the end of the timeline or wherever you drop them.
+  </Step>
+
+  <Step title="Trim a clip">
+    Hover over the left or right edge of a clip until the trim cursor appears, then drag inward to shorten it. The clip trims non-destructively — you can always drag it back out to restore footage.
+  </Step>
+
+  <Step title="Split a clip">
+    Move the playhead to where you want to cut, then press **C** (or click the razor tool). The clip splits into two independent segments.
+  </Step>
+
+  <Step title="Move a clip">
+    Click and drag a clip to reposition it on the timeline. Drop it between other clips or onto a different track.
+  </Step>
+
+  <Step title="Delete a clip">
+    Select a clip and press **Backspace** or **Delete** to remove it from the timeline.
+  </Step>
+
+  <Step title="Duplicate a clip">
+    Select a clip and press **Cmd+D** to create a copy right next to the original.
+  </Step>
+
+  <Step title="Copy and paste">
+    Use **Cmd+C** and **Cmd+V** to copy and paste clips anywhere on the timeline.
+  </Step>
+</Steps>
+
+## Speed control
+
+You can change the playback speed of any clip from **0.25x** (slow motion) to **32x** (fast forward). Right-click a clip and choose **Speed**, or adjust it in the clip inspector.
+
+## Audio per clip
+
+Each clip has its own audio settings:
+
+- **Volume** — Set from 0% to 100%
+- **Fade in** — Gradually increase volume at the start of the clip
+- **Fade out** — Gradually decrease volume at the end of the clip
+
+## Ripple edit mode
+
+Press **R** to toggle **Ripple Edit** mode. When enabled, trimming or deleting a clip automatically shifts all subsequent clips to close the gap. This keeps your timeline tight without manual repositioning.
+
+## Multi-select
+
+Hold **Shift** and click multiple clips to select them at once. You can then move, delete, or apply changes to all selected clips in a batch.
+
+## Track management
+
+The timeline supports three types of tracks:
+
+- **Video tracks** — Hold video clips and images
+- **Audio tracks** — Hold music, sound effects, and voiceovers
+- **Caption tracks** — Hold auto-generated or manually added captions
+
+You can reorder tracks by dragging them, **mute** an audio track to silence it, or **toggle visibility** on a video track to temporarily hide it from the preview.
+
+## Snap and grid
+
+Snapping helps you align clips precisely:
+
+- **Snap to clips** — Clips snap to the edges of neighboring clips
+- **Snap to playhead** — Clips snap to the current playhead position
+- **Snap to grid** — Clips snap to a configurable grid interval
+
+You can toggle snap settings from the timeline toolbar.
+
+## Undo and redo
+
+Cardboard supports up to **50 undo steps**. Press **Cmd+Z** to undo and **Cmd+Shift+Z** to redo. Every action on the timeline — trimming, splitting, moving, deleting — is fully reversible.
+
+<Tip>
+  You can also use AI Chat for timeline edits — try "Trim the first 5 seconds off every clip" or "Delete all clips shorter than 2 seconds."
+</Tip>
+
+## Keyboard shortcuts
+
+<AccordionGroup>
+  <Accordion title="Playback">
+    - **Space** — Play / Pause
+    - **L** — Play forward
+    - **J** — Play backward
+    - **Left arrow** — Move playhead back one frame
+    - **Right arrow** — Move playhead forward one frame
+  </Accordion>
+
+  <Accordion title="Tools">
+    - **C** — Razor / Split tool
+    - **R** — Toggle ripple edit mode
+    - **V** — Selection tool (default)
+  </Accordion>
+
+  <Accordion title="Editing">
+    - **Backspace / Delete** — Delete selected clip
+    - **Cmd+D** — Duplicate selected clip
+    - **Cmd+C** — Copy clip
+    - **Cmd+V** — Paste clip
+    - **Cmd+Z** — Undo
+    - **Cmd+Shift+Z** — Redo
+  </Accordion>
+
+  <Accordion title="Navigation">
+    - **Cmd + +** — Zoom in on timeline
+    - **Cmd + -** — Zoom out on timeline
+    - **Home** — Jump to beginning
+    - **End** — Jump to end
+  </Accordion>
+</AccordionGroup>
+
+## What's next?
 
 <CardGroup cols={2}>
-  <Card title="The Editor Layout" icon="table-columns" href="/getting-started/editor-overview">
-    See where the timeline fits in the editor.
+  <Card title="Media Library & Search" icon="photo-film" href="/editing/media-library">
+    Import and find your media files.
   </Card>
   <Card title="Editing with AI Chat" icon="wand-magic-sparkles" href="/ai-editing/ai-chat">
     Use AI commands to edit your timeline faster.

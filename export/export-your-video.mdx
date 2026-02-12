@@ -3,15 +3,63 @@ title: Export Your Video
 description: Render and download your finished video, or export to other editors.
 ---
 
+When your edit is ready, Cardboard renders the final video directly in your browser — no server upload needed. You can export as a video file or as a project for another editing application.
+
+## Exporting as video
+
+<Steps>
+  <Step title="Click the Export button">
+    Click the **Export** button in the top-right corner of the editor.
+  </Step>
+
+  <Step title="Choose your format">
+    Select from MP4, WebM, MOV, or MKV. MP4 is the most widely compatible.
+  </Step>
+
+  <Step title="Set resolution and quality">
+    Pick your resolution (480p up to 4K) and quality level (Very Low to Very High). See [Formats & Quality Settings](/export/formats-and-quality) for detailed recommendations.
+  </Step>
+
+  <Step title="Click Export">
+    Click **Export** to start rendering. A progress bar shows real-time percentage as frames are processed.
+  </Step>
+
+  <Step title="Download your file">
+    When rendering is complete, your video downloads automatically. On supported browsers, Cardboard uses the File System Access API to stream directly to a file on disk, which saves memory on large projects.
+  </Step>
+</Steps>
+
+<Tip>
+  For most use cases, 1080p MP4 at High quality is the sweet spot — it looks great and works on every platform.
+</Tip>
+
+## Exporting to other editors
+
+If you want to continue editing in a desktop application, Cardboard can export your project timeline in formats that other editors understand.
+
+<Tabs>
+  <Tab title="Final Cut Pro / DaVinci Resolve">
+    Export as **FCPXML** to open your project in Final Cut Pro or DaVinci Resolve. Your clips, cuts, and timing are preserved.
+  </Tab>
+
+  <Tab title="Premiere Pro">
+    Export as **Premiere Pro XML** to bring your edit into Adobe Premiere Pro with all your clips and cuts intact.
+  </Tab>
+
+  <Tab title="AAF">
+    Export as **AAF** (Advanced Authoring Format) for compatibility with Avid Media Composer and other professional tools.
+  </Tab>
+</Tabs>
+
 <Note>
-  This page is coming soon. To export now, click the **Export** button in the top-right corner of the editor, choose your settings, and click **Export**.
+  When exporting to another editor, you can configure a **custom media base directory** so the NLE can find your linked media files on disk.
 </Note>
 
-Want this page sooner? Let us know at [founders@usecardboard.com](mailto:founders@usecardboard.com).
+## What's next?
 
 <CardGroup cols={2}>
   <Card title="Formats & Quality Settings" icon="sliders" href="/export/formats-and-quality">
-    Learn about resolution, frame rate, and format options.
+    Detailed breakdown of resolution, frame rate, and format options.
   </Card>
   <Card title="Your First Video in 5 Minutes" icon="rocket" href="/getting-started/quickstart">
     The quickstart guide includes an export walkthrough.

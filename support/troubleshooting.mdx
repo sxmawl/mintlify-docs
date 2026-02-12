@@ -3,17 +3,103 @@ title: Troubleshooting
 description: Solutions for common issues in Cardboard.
 ---
 
-<Note>
-  This page is coming soon. If you are experiencing an issue right now, email us at [founders@usecardboard.com](mailto:founders@usecardboard.com) and we will help you out — we typically respond within a few hours.
-</Note>
+Running into a problem? Check the common issues below for a quick fix. If your issue isn't listed, reach out to the team and we will help you out.
 
-Want this page sooner? Let us know at [founders@usecardboard.com](mailto:founders@usecardboard.com).
+## Export issues
+
+<AccordionGroup>
+  <Accordion title="My export seems stuck">
+    Exports run entirely in your browser, so large projects with many clips or high resolutions take longer to render. Check the progress bar — if it is still moving, the export is working. If it has stalled for several minutes:
+
+    - Try reducing the resolution (e.g., switch from 4K to 1080p)
+    - Close other browser tabs to free up memory
+    - Try exporting in a different format
+  </Accordion>
+
+  <Accordion title="Export failed with an error">
+    - Try a different format (e.g., switch from WebM to MP4)
+    - Reduce the quality level
+    - Make sure you are using a supported browser — **Chrome** or **Edge** are recommended for best performance
+    - If the issue persists, try reloading the editor and exporting again
+  </Accordion>
+
+  <Accordion title="Exported video has no audio">
+    - Check that the audio track is not muted on the timeline
+    - Check the clip volume — make sure it is not set to 0%
+    - Ensure the audio codec is supported by your playback device
+    - Try exporting as MP4, which has the widest audio codec support
+  </Accordion>
+</AccordionGroup>
+
+## Media issues
+
+<AccordionGroup>
+  <Accordion title="My video won't import">
+    - Check that the file format is supported (MP4, WebM, MOV, MKV, MP3, WAV, AAC, PNG, JPG, GIF, WebP)
+    - Try re-encoding the file with a tool like [HandBrake](https://handbrake.fr) or FFmpeg
+    - Make sure the file is not corrupted — try playing it in another application first
+    - Check that the file does not exceed your plan's maximum file size
+  </Accordion>
+
+  <Accordion title="Transcription isn't working">
+    - Make sure the video has audible speech — very quiet or heavily distorted audio may not transcribe well
+    - Check that the audio track is not muted
+    - Try re-importing the file to trigger a fresh transcription
+  </Accordion>
+
+  <Accordion title="Video analysis is taking a long time">
+    Video analysis runs in the cloud, so processing time depends on file size and current server load. Larger files naturally take more time. Check your network connection and wait a few minutes — the analysis will complete in the background while you edit.
+  </Accordion>
+</AccordionGroup>
+
+## Editor issues
+
+<AccordionGroup>
+  <Accordion title="The editor is slow or laggy">
+    - Close unused browser tabs to free up memory and CPU
+    - Reduce the preview resolution in the canvas settings
+    - Use **Chrome** or **Edge** for the best performance — these browsers have the strongest support for video processing
+    - If you have many clips on the timeline, try breaking your project into shorter sections
+  </Accordion>
+
+  <Accordion title="I can't hear audio in the editor">
+    - Check the **master volume** slider in the timeline toolbar
+    - Make sure the audio track is not muted (look for the mute icon on the track)
+    - Check your system audio settings and make sure your output device is correct
+    - Try clicking somewhere in the editor first — some browsers require a user interaction before playing audio
+  </Accordion>
+
+  <Accordion title="My changes disappeared">
+    - Try **Cmd+Z** (or **Ctrl+Z**) to undo — you may have accidentally deleted or moved something
+    - Projects auto-save locally, so your work should be preserved. Make sure you have the correct project open
+    - If you are signed in, check that your browser did not clear local storage or cookies
+  </Accordion>
+</AccordionGroup>
+
+## AI issues
+
+<AccordionGroup>
+  <Accordion title="The AI isn't doing what I asked">
+    - Be specific in your prompts — "Trim the first 5 seconds" works better than "make it shorter"
+    - Break complex requests into smaller steps instead of one large prompt
+    - Check the [AI Chat guide](/ai-editing/ai-chat) and [AI Prompts Cheat Sheet](/ai-editing/ai-prompts-guide) for tips on writing effective prompts
+    - If the AI misunderstood, type "Undo that" and try rephrasing your request
+  </Accordion>
+</AccordionGroup>
+
+## Still need help?
+
+<Info>
+  Email us at [founders@usecardboard.com](mailto:founders@usecardboard.com) — we typically respond within a few hours.
+</Info>
+
+## What's next?
 
 <CardGroup cols={2}>
   <Card title="FAQ" icon="circle-question" href="/support/faq">
     Answers to frequently asked questions.
   </Card>
-  <Card title="Your First Video in 5 Minutes" icon="rocket" href="/getting-started/quickstart">
-    Start fresh with the quickstart guide.
+  <Card title="Editing with AI Chat" icon="wand-magic-sparkles" href="/ai-editing/ai-chat">
+    Learn how to get the most out of AI editing.
   </Card>
 </CardGroup>
