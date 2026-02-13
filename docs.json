@@ -12,28 +12,27 @@
     "tabs": [
       {
         "tab": "Docs",
-        "groups": [
+        "pages": [
           {
             "group": "Getting Started",
             "pages": [
               "index",
-              "getting-started/quickstart",
-              "getting-started/editor-overview"
+              "getting-started/quickstart"
             ]
           },
           {
-            "group": "AI Editing",
+            "group": "AI and Manual Editing",
             "pages": [
               "ai-editing/ai-chat",
-              "ai-editing/ai-prompts-guide",
+              "editing/timeline",
               "ai-editing/captions",
               "ai-editing/voiceovers"
             ]
           },
+          "ai-editing/ai-prompts-guide",
           {
             "group": "Editing Tools",
             "pages": [
-              "editing/timeline",
               "editing/media-library",
               "editing/effects-and-transitions",
               "editing/music-and-audio"

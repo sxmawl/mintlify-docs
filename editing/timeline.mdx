@@ -1,85 +1,211 @@
 ---
-title: Timeline Editing
-description: Add, trim, split, and rearrange clips on the timeline.
+title: "Manual Editing"
+description: "AI gave you a solid first cut. But sometimes you need that hands-on control. Let's get your hands on the timeline."
 ---
 
-The **Timeline** is where you assemble your video. It runs along the bottom of the editor and holds all your clips, audio, and captions in a multi-track layout. You can drag, trim, split, and rearrange clips to build your edit.
+We're still working on that vlog reel. AI handled the heavy lifting, but now you want to **fine-tune specific moments.**
 
-## Clip operations
+## **The Timeline: Your Control Centre**
 
-<Steps>
-  <Step title="Add a clip">
-    Drag any file from the **Media Library** onto the timeline to add it. New clips are placed at the end of the timeline or wherever you drop them.
-  </Step>
+Bottom of your screen - that's the timeline. **Every clip, every transition, every audio track lives here.**
 
-  <Step title="Trim a clip">
-    Hover over the left or right edge of a clip until the trim cursor appears, then drag inward to shorten it. The clip trims non-destructively — you can always drag it back out to restore footage.
-  </Step>
+Think of it like a horizontal canvas where time flows left to right. What you see is what plays.
 
-  <Step title="Split a clip">
-    Move the playhead to where you want to cut, then press **C** (or click the razor tool). The clip splits into two independent segments.
-  </Step>
+![Hero](/images/hero.png)
 
-  <Step title="Move a clip">
-    Click and drag a clip to reposition it on the timeline. Drop it between other clips or onto a different track.
-  </Step>
+## What all can you do
 
-  <Step title="Delete a clip">
-    Select a clip and press **Backspace** or **Delete** to remove it from the timeline.
-  </Step>
+<Tabs>
+  <Tab title="Moving Clips Around">
+    Your clips are in the wrong order? Just drag and drop.
 
-  <Step title="Duplicate a clip">
-    Select a clip and press **Cmd+D** to create a copy right next to the original.
-  </Step>
+    **How to reorder:**
 
-  <Step title="Copy and paste">
-    Use **Cmd+C** and **Cmd+V** to copy and paste clips anywhere on the timeline.
-  </Step>
-</Steps>
+    1. Click on any clip in the timeline
+    2. Drag it left or right
+    3. Drop it where you want it
 
-## Speed control
+    The other clips automatically shift to make room. No gaps, no mess.
 
-You can change the playback speed of any clip from **0.25x** (slow motion) to **32x** (fast forward). Right-click a clip and choose **Speed**, or adjust it in the clip inspector.
+    **Why you'd do this:**
 
-## Audio per clip
+    - Put your best shot first to hook viewers
+    - Rearrange the story flow
+    - Move the punchline to the end. 
+  </Tab>
+  <Tab title="Trimming Clips">
+    Got extra footage at the start or end of a clip? Trim it.
 
-Each clip has its own audio settings:
+    **How to trim:**
 
-- **Volume** — Set from 0% to 100%
-- **Fade in** — Gradually increase volume at the start of the clip
-- **Fade out** — Gradually decrease volume at the end of the clip
+    1. Hover over the edge of any clip (left or right)
+    2. Your cursor changes to a resize arrow
+    3. Click and drag inward to shorten, outward to extend
 
-## Ripple edit mode
+    Watch the preview as you drag – you'll see exactly where you're cutting.
 
-Press **R** to toggle **Ripple Edit** mode. When enabled, trimming or deleting a clip automatically shifts all subsequent clips to close the gap. This keeps your timeline tight without manual repositioning.
+    **Pro tip:** Use **Ripple Edit **on the top right of the timeline panel. Once you trim a clip, others automatically adjust.
+  </Tab>
+  <Tab title="Splitting Clips">
+    Need to cut a clip in half? Maybe remove a boring middle section?
 
-## Multi-select
+    **How to split:**
 
-Hold **Shift** and click multiple clips to select them at once. You can then move, delete, or apply changes to all selected clips in a batch.
+    1. Select the razor tool from top left corner of timeline panel
+    2. Hover over the clip
+    3. Click from where you want to split
 
-## Track management
+    Now you've got two separate clips. Delete one, move them apart, or add something between them.
 
-The timeline supports three types of tracks:
+    **When you'd split:**
 
-- **Video tracks** — Hold video clips and images
-- **Audio tracks** — Hold music, sound effects, and voiceovers
-- **Caption tracks** — Hold auto-generated or manually added captions
+    - Remove a bad section from the middle
+    - Insert B-roll between parts of a talking head
+    - Create jump cuts for tighter pacing
+  </Tab>
+  <Tab title="Deleting Clips or Sections">
+    Made a mistake? Don't need a clip? Delete it.
 
-You can reorder tracks by dragging them, **mute** an audio track to silence it, or **toggle visibility** on a video track to temporarily hide it from the preview.
+    **How to delete:**
 
-## Snap and grid
+    1. Click the clip you want to remove
+    2. Hit Delete key 
 
-Snapping helps you align clips precisely:
+    The timeline adjusts automatically. No gaps left behind.
+  </Tab>
+  <Tab title="Removing Gaps">
+    Sometimes after deleting or moving clips, you get awkward empty spaces on the timeline.
 
-- **Snap to clips** — Clips snap to the edges of neighboring clips
-- **Snap to playhead** — Clips snap to the current playhead position
-- **Snap to grid** — Clips snap to a configurable grid interval
+    **How to remove gaps:**
 
-You can toggle snap settings from the timeline toolbar.
+    1. Look at your timeline—see those empty spaces between clips?
+    2. Click the three dots near "Track 1" on the left
+    3. Choose "Remove gaps" (hover to see where they are)
 
-## Undo and redo
+    All your clips snap together. Clean timeline, smooth playback.
+  </Tab>
+  <Tab title="Adjusting Audio Levels">
+    Your voiceover is too quiet? Background music drowning out your words? Fix it.
 
-Cardboard supports up to **50 undo steps**. Press **Cmd+Z** to undo and **Cmd+Shift+Z** to redo. Every action on the timeline — trimming, splitting, moving, deleting — is fully reversible.
+    **How to adjust volume:**
+
+    1. Click on any clip with audio
+    2. Look for volume slider in the left panel
+    3. Drag the volume line up (louder) or down (quieter)
+
+    **Pro tip:** Duck your music when you're talking. Lower the music volume during voiceover sections, raise it during B-roll.
+  </Tab>
+  <Tab title="Splitting Audio from Video">
+    Want to keep the video but replace the audio? Or vice versa?
+
+    **How to split audio:**
+
+    1. Right-click on the clip
+    2. Select "Mute" 
+
+    Now audio and video are separate tracks on the timeline. Edit them independently.
+
+    **When you'd do this:**
+
+    - Replace original audio with voiceover
+    - Use video from one clip, audio from another
+    - Remove camera audio entirely
+  </Tab>
+  <Tab title="Adding Transitions">
+    Transitions smooth out the jumps between clips.
+
+    **How to add transitions:**
+
+    1. Click between two clips (where they meet)
+    2. Look at the left panel → Transitions
+    3. Drag a transition (fade, dissolve, wipe) onto the join point
+
+    **Pro tip:** Less is more. Most cuts don't need transitions.
+  </Tab>
+  <Tab title="Adjusting Clip Speed">
+    Want to speed up or slow down a clip?
+
+    **How to change speed:**
+
+    1. Click the clip
+    2. Look in the left panel for "Speed" or "Duration"
+    3. Adjust the playback speed
+  </Tab>
+  <Tab title="Adding Text">
+    Want to add text overlays, titles, or lower thirds?
+
+    **How to add text:**
+
+    1. Click the Text tool in the left panel
+    2. Choose a style (or start blank)
+    3. Type your text
+    4. Drag it onto the timeline above your video
+
+    Position it on the canvas, resize it, change colors - it's all in the left panel.
+  </Tab>
+  <Tab title="Layering Clips (Picture-in-Picture)">
+    Want to show two videos at once? Create a picture-in-picture effect.
+
+    **How to layer:**
+
+    1. Drag a second clip onto the timeline _above_ your main clip (new track)
+    2. Resize it on the canvas to make it smaller
+    3. Position it in a corner
+
+    **When you'd use this:**
+
+    - Reaction shots while showing the main content
+    - Show your face while doing a screen recording
+    - Before/after comparisons side by side
+  </Tab>
+  <Tab title="Working with Multiple Tracks">
+    Timeline can have multiple layers - video tracks stack vertically.
+
+    **How tracks work:**
+
+    - Track 1 (bottom): Background/main footage
+    - Track 2: Overlays, B-roll, PIP
+    - Track 3+: More overlays, text, effects
+
+    Top tracks appear _on top_ of lower tracks.
+  </Tab>
+  <Tab title="Zooming In (Crop & Scale)">
+    Want to zoom into your subject? Create a crop effect?
+
+    **How to zoom:**
+
+    1. Click the clip
+    2. Look in the left panel for "Transform" or "Crop"
+    3. Adjust accordingly
+
+    **When you'd zoom:**
+
+    - Focus on a detail (product feature, facial expression)
+    - Create dynamic movement in a static shot
+    - Crop out unwanted edges or people
+  </Tab>
+  <Tab title="Color Correction Basics">
+    Make your colors pop or match clips shot in different lighting.
+
+    **How to adjust color:**
+
+    1. Selec the “Color grading” from left panel
+    2. Hover over the options to check how it feels.
+    3. Select the one you like, or stack multiple at once
+  </Tab>
+  <Tab title="Snapping Clips to Beat">
+    Make your cuts sync to the music beat for a professional feel.
+
+    **How to snap to beat:**
+
+    1. Play your video and listen to the music
+    2. Mark the beats (where you hear the thump)
+    3. Split your clips at those points
+    4. Align clip changes to beat markers
+
+    **Why this matters:** Videos that cut on beat feel more polished and engaging.
+  </Tab>
+</Tabs>
 
 <Tip>
   You can also use AI Chat for timeline edits — try "Trim the first 5 seconds off every clip" or "Delete all clips shorter than 2 seconds."
@@ -95,13 +221,11 @@ Cardboard supports up to **50 undo steps**. Press **Cmd+Z** to undo and **Cmd+Sh
     - **Left arrow** — Move playhead back one frame
     - **Right arrow** — Move playhead forward one frame
   </Accordion>
-
   <Accordion title="Tools">
     - **C** — Razor / Split tool
     - **R** — Toggle ripple edit mode
     - **V** — Selection tool (default)
   </Accordion>
-
   <Accordion title="Editing">
     - **Backspace / Delete** — Delete selected clip
     - **Cmd+D** — Duplicate selected clip
@@ -110,7 +234,6 @@ Cardboard supports up to **50 undo steps**. Press **Cmd+Z** to undo and **Cmd+Sh
     - **Cmd+Z** — Undo
     - **Cmd+Shift+Z** — Redo
   </Accordion>
-
   <Accordion title="Navigation">
     - **Cmd + +** — Zoom in on timeline
     - **Cmd + -** — Zoom out on timeline
@@ -122,10 +245,10 @@ Cardboard supports up to **50 undo steps**. Press **Cmd+Z** to undo and **Cmd+Sh
 ## What's next?
 
 <CardGroup cols={2}>
-  <Card title="Media Library & Search" icon="photo-film" href="/editing/media-library">
+  <Card icon="photo-film" href="/editing/media-library" title="Media Library & Search">
     Import and find your media files.
   </Card>
-  <Card title="Editing with AI Chat" icon="wand-magic-sparkles" href="/ai-editing/ai-chat">
+  <Card icon="wand-magic-sparkles" href="/ai-editing/ai-chat" title="Editing with AI Chat">
     Use AI commands to edit your timeline faster.
   </Card>
 </CardGroup>
