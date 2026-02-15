@@ -31,6 +31,16 @@
           },
           "ai-editing/ai-prompts-guide",
           {
+            "group": "Use Case Examples",
+            "pages": [
+              "ai-editing/voiceovers-copied-1",
+              "ai-editing/voiceovers-copied-2",
+              "ai-editing/voiceovers-copied-3",
+              "ai-editing/voiceovers-copied-4",
+              "ai-editing/voiceovers-copied-5"
+            ]
+          },
+          {
             "group": "Editing Tools",
             "pages": [
               "editing/media-library",
