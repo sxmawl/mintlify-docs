@@ -3,9 +3,9 @@
   "theme": "almond",
   "name": "Cardboard Learn",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#306EE8",
+    "light": "#5E8EED",
+    "dark": "#144BB8"
   },
   "favicon": "/favicon.svg",
   "navigation": {
