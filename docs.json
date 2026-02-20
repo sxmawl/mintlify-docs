@@ -24,10 +24,9 @@
             "group": "Learn Cardboarding",
             "pages": [
               "ai-editing/ai-chat",
-              "ai-editing/prompting-guide",
-              "editing/timeline",
               "ai-editing/captions",
               "ai-editing/voiceovers",
+              "editing/media-library",
               "getting-started/learn"
             ]
           },
@@ -42,9 +41,9 @@
             ]
           },
           {
-            "group": "Editing Tools",
+            "group": "The Editor",
             "pages": [
-              "editing/media-library",
+              "editing/timeline",
               "editing/effects-and-transitions",
               "editing/music-and-audio"
             ]
