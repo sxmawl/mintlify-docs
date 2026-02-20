@@ -15,6 +15,7 @@
         "pages": [
           {
             "group": "Getting Started",
+            "icon": "video",
             "pages": [
               "welcome",
               "first"
@@ -22,6 +23,7 @@
           },
           {
             "group": "Learn Cardboarding",
+            "icon": "graduation-cap",
             "pages": [
               "learn/talk",
               "learn/captions",
@@ -32,6 +34,7 @@
           },
           {
             "group": "Examples",
+            "icon": "apple-whole",
             "pages": [
               "ai-editing/voiceovers-copied-1",
               "ai-editing/voiceovers-copied-2",
@@ -42,6 +45,7 @@
           },
           {
             "group": "The Editor",
+            "icon": "scissors",
             "pages": [
               "editing/timeline",
               "editing/effects-and-transitions",
@@ -50,6 +54,7 @@
           },
           {
             "group": "Exporting & Sharing",
+            "icon": "clapperboard",
             "pages": [
               "export/export-your-video",
               "export/formats-and-quality"
@@ -57,6 +62,7 @@
           },
           {
             "group": "Account & Billing",
+            "icon": "money-bill-1",
             "pages": [
               "account/plans-and-pricing",
               "account/manage-your-account"
@@ -64,6 +70,7 @@
           },
           {
             "group": "Support",
+            "icon": "gramophone",
             "pages": [
               "support/faq",
               "support/troubleshooting"
