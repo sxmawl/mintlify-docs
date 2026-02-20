@@ -21,17 +21,18 @@
             ]
           },
           {
-            "group": "AI and Manual Editing",
+            "group": "Learn Cardboarding",
             "pages": [
               "ai-editing/ai-chat",
+              "ai-editing/prompting-guide",
               "editing/timeline",
               "ai-editing/captions",
-              "ai-editing/voiceovers"
+              "ai-editing/voiceovers",
+              "getting-started/learn"
             ]
           },
-          "ai-editing/ai-prompts-guide",
           {
-            "group": "Use Case Examples",
+            "group": "Examples",
             "pages": [
               "ai-editing/voiceovers-copied-1",
               "ai-editing/voiceovers-copied-2",

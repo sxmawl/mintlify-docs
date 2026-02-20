@@ -1,38 +1,68 @@
 ---
-title: "Editing with AI Chat"
-description: "You've got your first draft. It's good, but you want it great. Let's polish this reel using AI."
+title: "How to talk to Cardboard?"
+description: "Cardboard works best when you direct it like a human editor - be clear about what you want. Think of it like your editing assistant who never gets tired."
 ---
 
-![AI Chat panel in the Cardboard editor](/images/hero.png)
+## **For the First Draft**
 
-## How it works
+### Keep It Simple
 
-Think of AI Chat as your editing assistant who never gets tired. You tell it what you want, and it makes it happen.
+Medium sized prompts almost always outperform extremely long and detailed ones. The agent will ask when it needs more information, so you don't need to anticipate everything upfront.
 
-Here's what I need for my vlog reel:
+**Good example:**
 
-- Tighter pacing (no dead air)
-- Captions so people can watch without sound
-- Background music to set the vibe
-- Maybe a title card to hook viewers
+> "I want to create an Instagram reel. Go through the transcript, find highlights for a 1-2 minute clip. Add captions and some background music."
 
-Let's do it.
+**Instead of:**
 
-## What the AI can do
+> "Make an engaging clip"
+
+---
+
+### Structure Prompts Logically
+
+The following structure works the best:
+
+1. **Define the goal first** - what's the video for and who's it for?
+2. **Sequence the timeline** - provide the agent with script or rough sequence instead
+3. **Clean up** - remove silences, dead takes, repetitive content
+4. **Final touches** - add captions, background music, transitions, sound effects, etc.
+
+**Example:**
+
+> "Create a 60-second LinkedIn video from this interview recording - @REC_6472.mov. \
+> \
+> We introduce the guest, talk about geopolitics, jobs, AI, fitness, and then end with rapid fire questions. Look more through the transcript to find the detailed sequence.\
+> \
+> Cut out silences and any repeated takes. \
+> \
+> Add captions in white at the bottom, and add some upbeat background music."
+
+---
+
+### What Cardboard Can Do
+
+To set the right expectations, here's what the agent works with:
+
+**It can:** find and sequence the right clips, create highlights, add captions, apply filters, generate voiceovers, adjust pacing, add background music, transitions, sound effects and remove silences.
+
+**It can't:** generate music, sound effects, images, or video footage.
+
+---
+
+### The Sweet Spot
+
+Too little context makes the agent guess. But if you give it too much, it might get confused. Aim for a clear goal + key constraints, then let the agent handle the execution.
+
+## How to ask Cardboard for Incremental Changes?
 
 <Tabs>
-  <Tab title="Making Your Video Snappier">
+  <Tab title="Make Video Snappier">
     My first draft has some slow moments. Let's fix that.
 
-    > Type this in AI Chat (right panel): **"Remove all silent parts and tighten the pacing"**
+    > Type this in AI Chat (right panel): **"Remove all silent parts, dead sections and repitive takes. I want to tighten the pacing"**
 
-    Hit Enter. AI scans your video, finds the pauses, and cuts them out. Your video now flows better.
-
-    Watch it. Too fast?
-
-    > Tell AI: **"Keep a 0.5-second pause between clips for breathing room"**
-
-    AI adjusts. You're in control.
+    Hit Enter. Cardboard looks at your video, finds the pauses, and cuts them out. Your video now flows better.
   </Tab>
   <Tab title="Adding Captions">
     80% of people scroll without sound. Captions are non-negotiable.
@@ -43,39 +73,31 @@ Let's do it.
 
     Want to tweak the style?
 
-    >  Try: **"Make captions bold and yellow" **or 
-    >
-    > **"Put captions at the top of the screen"**
-
-    AI updates them instantly.
+    > Try: \
+    > - "**Make captions bold and yellow**" OR \
+    > - "**Put captions at the top of the screen**"
   </Tab>
-  <Tab title="Dropping in Background Music">
-    Every good video has a vibe. Music sets it.
+  <Tab title="Add Music">
+    Every good video has a vibe. Music sets that vibe.
 
     > Type: **"Add upbeat background music"**
 
-    AI picks a track that matches your video's energy and adds it to the timeline.
+    AI picks a track that matches your video's cadence and adds it to the timeline.
 
-    Don't like the vibe? 
+    Don't like it?
 
-    > Be specific:**"Add chill lo-fi background music" or** 
-    >
-    >  **"Add energetic electronic music"**
+    > Be specific:**"Add chill lo-fi background music" **OR **"Add energetic electronic music"**
 
-    AI swaps it out. You can also tell it to adjust the volume: 
+    AI swaps it out. You can also tell it to adjust the volume:
 
-    > **"Lower the background music volume so the voiceover is clear"**
+    > **"Lower the background music volume so the voiceover is audible"**
   </Tab>
-  <Tab title="Fine-Tuning the Details">
+  <Tab title="Housekeeping">
     Here's where you make it _yours_. Try these:
 
     **Speed up slow sections:**
 
-    > "Speed up the middle section to 1.5x"
-
-    **Make it platform-ready:**
-
-    > "Make this 15 seconds for TikTok"
+    > "Speed up the middle section from 0:15 to 0:20 to 1.5x"
 
     **Add transitions:**
 
@@ -85,27 +107,25 @@ Let's do it.
 
     > "Zoom in on the coffee cup at 0:12"
 
-    **Colour grade it:**
+    **Make the color pop:**
 
-    > "Add a warm, cinematic color grade"
+    > "Add a warm, cinematic filter"
   </Tab>
 </Tabs>
 
-Each prompt, AI adjusts. You watch, you iterate, you perfect.
-
 ## Tips for better prompts
 
-- **Iterate.** Start with a big edit, then refine with follow-up commands.
-- **Be specific:** "Add captions" works. "Add bold white captions at the bottom with a black background" works better.
+- **Do it iteratively:** Start with a small edit, then refine with follow-up commands.
+- **Be specific:** "Add captions" works. "Add bold white captions at the bottom with a black background" works even better.
+- **Use "@" to mention clips or music:** "Match cuts to the beat of **@background-music.mp3**"
 - **Reference timestamps:** "Zoom in at 0:15" or "Speed up from 0:10 to 0:25"
-- **Use the @ feature:** "Match cuts to the beat of @background-music.mp3"
-- **Stack requests:** "Add captions, remove silent parts, and add upbeat music" (AI handles all three)
+- **Stack relevant requests:** "Add captions, remove silent parts, and add upbeat music" - all fall under enhancements.
 
 <Tip>
-  The AI remembers your conversation within a project. You can say things like "Actually, undo that and make it 45 seconds instead."
+  The AI has context of recent conversation. You can say things like "Actually, undo that and make it 45 seconds instead."
 </Tip>
 
-## **When AI Doesn't Get It Right**
+## **When AI Doesn't Get It Right?**
 
 Sometimes AI misunderstands. No worries.
 
@@ -113,26 +133,11 @@ Sometimes AI misunderstands. No worries.
 - **Clarify your prompt** – "Actually, make the captions smaller and move them to the top"
 - **Try a different approach** – Instead of "make it better," say "add transitions and speed it up"
 
-AI learns from your feedback. The more specific you are, the better it gets.
-
-<Warning>
-  If you undo an AI edit and then make a new edit, the undone changes are lost. This is the same as undo/redo in any editor.
-</Warning>
-
-## **You're Ready**
-
-You've got captions, music, smooth pacing, and a hook. Your video reel is ready to post.
-
-Hit **Export** (top-right), pick your settings, and download it.
-
-Or keep tweaking. There's no limit to iterations. Make it exactly what you want.
+The more specific you are, the better it gets.
 
 ## What's next?
 
 <CardGroup cols={2}>
-  <Card icon="list-check" href="/ai-editing/ai-prompts-guide" title="AI Prompts Cheat Sheet">
-    Copy-paste prompt recipes for every use case.
-  </Card>
   <Card icon="closed-captioning" href="/ai-editing/captions" title="Auto-Generated Captions">
     Learn about Cardboard's caption features.
   </Card>
