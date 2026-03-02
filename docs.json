@@ -34,13 +34,13 @@
           },
           {
             "group": "Examples",
-            "icon": "apple-whole",
+            "icon": "film",
             "pages": [
-              "ai-editing/voiceovers-copied-1",
-              "ai-editing/voiceovers-copied-2",
-              "ai-editing/voiceovers-copied-3",
-              "ai-editing/voiceovers-copied-4",
-              "ai-editing/voiceovers-copied-5"
+              "ai-editing/beat-sync-montage",
+              "ai-editing/vlog",
+              "ai-editing/product-showcase",
+              "ai-editing/explainer-video",
+              "ai-editing/podcast-clipping"
             ]
           },
           {
@@ -49,7 +49,8 @@
             "pages": [
               "editing/timeline",
               "editing/effects-and-transitions",
-              "editing/music-and-audio"
+              "editing/music-and-audio",
+              "editing/background-removal"
             ]
           },
           {
@@ -70,7 +71,7 @@
           },
           {
             "group": "Support",
-            "icon": "gramophone",
+            "icon": "life-ring",
             "pages": [
               "support/faq",
               "support/troubleshooting"

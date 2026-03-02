@@ -1,0 +1,69 @@
+---
+title: Background Removal
+description: Remove backgrounds from video clips and images using AI.
+---
+
+Cardboard can automatically remove the background from any video clip or image on your timeline. This is useful for layering subjects over new backgrounds, creating picture-in-picture effects, or isolating a speaker from a distracting environment.
+
+## How it works
+
+Background removal uses AI to separate the foreground subject from the background. For images, processing happens instantly in your browser. For video, each frame is processed in the cloud — you can keep editing while it runs.
+
+## Removing a background
+
+<Steps>
+  <Step title="Select a clip">
+    Click on any **video** or **image** clip on the timeline.
+  </Step>
+
+  <Step title="Find the Background Removal toggle">
+    In the properties panel on the left, scroll down to the **Remove Background** section.
+  </Step>
+
+  <Step title="Toggle it on">
+    Flip the switch to start background removal. You will see a progress indicator while the AI processes your clip.
+  </Step>
+
+  <Step title="Done">
+    Once processing completes, the background is transparent. You can layer other clips or images behind it on a lower track.
+  </Step>
+</Steps>
+
+<Tip>
+  For images, background removal runs locally in your browser and finishes in a few seconds. For video clips, the file needs to be uploaded to the cloud first — you will see an upload progress bar if the file has not been uploaded yet.
+</Tip>
+
+## Layering over a new background
+
+After removing the background from a clip, place it on a **higher track** than your background content:
+
+1. Put your background video or image on **Track 1**
+2. Put the clip with the removed background on **Track 2** (above it)
+3. The subject appears composited over the new background
+
+See [Timeline Editing](/editing/timeline) for more on working with multiple tracks.
+
+## Turning it off
+
+To restore the original background, click the clip and toggle the **Remove Background** switch off. The original clip is never modified — background removal is non-destructive.
+
+## Tips for best results
+
+- **Clear subjects** work best — a person standing in front of a wall will produce cleaner results than a busy scene with many overlapping objects
+- **Good lighting** helps the AI distinguish the subject from the background
+- **Steady footage** produces more consistent frame-to-frame results
+
+<Note>
+  Background removal works on video and image clips. It is not available for text, audio, or adjustment layers.
+</Note>
+
+## What's next?
+
+<CardGroup cols={2}>
+  <Card title="Timeline Editing" icon="timeline" href="/editing/timeline">
+    Learn how to layer clips using multiple tracks.
+  </Card>
+  <Card title="Effects & Transitions" icon="wand-magic-sparkles" href="/editing/effects-and-transitions">
+    Add transitions and color grading to your clips.
+  </Card>
+</CardGroup>
