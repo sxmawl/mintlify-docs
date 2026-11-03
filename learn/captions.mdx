@@ -1,86 +1,41 @@
 ---
 title: "Auto-Generated Captions"
-description: "Generate, edit, and style captions for your videos automatically."
+description: "Generate, review, and style captions in the web editor."
 ---
 
-Cardboard can automatically generate captions for any video with spoken audio across 20+ languages.
+Cardboard can transcribe speech and turn it into captions. Review the text and timing before exporting, especially for names, background noise, and overlapping speakers.
 
 ## Generate captions
 
-<Steps>
-  <Step title="Open the AI Chat panel">
-    Click the **AI Chat** panel on the right side of the editor if it isn't already open.
-  </Step>
-  <Step title="Ask for captions">
-    Type one of these prompts and press **Enter**:
+Ask in the AI Chat panel on the right:
 
-    - "Add captions to the video"
+> Add captions to the video.
 
-      <Frame>
-        <img
-          src="/images/image-6.png"
-          alt="Image"
-          title="Image"
-        />
-      </Frame>
-  </Step>
-  <Step title="Wait for processing">
-    Cardboard will transcribe the audio and generate captions on your timeline.
+You can also open **Captions** in the left rail to use the caption controls. Allow transcription to finish, then preview the result.
 
-    <Frame>
-      ![Image](/images/image-8.png)
-    </Frame>
-  </Step>
-</Steps>
+## Edit the text and timing
 
-## Style your captions
+- Double-click a caption in the video preview, or edit its text in the **Transcript** tab.
+- Adjust a caption's timing by dragging its edges on the timeline.
+- Select a caption and press Backspace to delete it with the default shortcuts.
+- Ask in chat for changes, such as “Break long captions into shorter lines.”
 
-Cardboard includes preset caption styles that you can apply with one click. You can also customize individual style properties.
+## Style captions
 
-### Preset styles
+Choose a caption preset, then use the floating caption toolbar to adjust the available styling controls, including font, size, color, and background. Position the caption in the preview.
 
-Choose from styles designed for different platforms and use cases:
+Each preset has its own animation. Choose another preset to change the animation. Use **Apply to all** in the caption toolbar to apply the style across your captions.
 
-<Frame>
-  ![Image](/images/image-9.png)
-</Frame>
+## Languages
 
-## Edit captions
-
-After captions are generated, you can edit them directly:
-
-- **Fix text** - Click on any caption on the timeline to edit the text
-- **Adjust timing** - Drag the edges of a caption to change when it appears and disappears
-- **Delete a caption** - Select it and press **Delete** or **Backspace**
-- **Split captions** - Break long captions into shorter segments for better readability
-
-<Tip>
-  You can also ask the AI to make caption edits: "Fix any misspelled words in the captions" or "Break long captions into shorter lines."
-</Tip>
-
-## Custom styling
-
-For each caption, you can customize:
-
-- Font, size, and color
-- Background color and opacity
-- Text position on the screen
-- Animation style (fade in, pop in, slide in)
-
-<Note>
-  Click on "apply to all" button so that every caption in your project updates to match the style.
-</Note>
-
-## Supported languages
-
-Cardboard can transcribe and generate captions in 20+ languages. Choose "Auto" so that AI auto-detects the spoken language. You don't need to specify it manually.
-
-## What's next?
+Transcription supports 30 languages. **Auto** is the default, but it cannot detect every supported language. Choose the language explicitly if detection is incorrect or your language is not supported by Auto.
 
 <CardGroup cols={2}>
-  
-</CardGroup>
+  <Card title="AI Voiceovers" icon="microphone" href="/learn/voiceovers">
+    Generate narration from a script.
+  </Card>
 
-<Card icon="microphone" href="/learn/voiceovers" title="AI Voiceovers">
-  Add AI-generated voiceovers to your video.
-</Card>
+  <Card title="Timeline Editing" icon="timeline" href="/editing/timeline">
+    Adjust timing and arrange your edit.
+  </Card>
+</CardGroup>

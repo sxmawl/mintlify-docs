@@ -1,89 +1,50 @@
 ---
 title: "Search your clips"
-description: "Upload, organize, and search your media files."
+description: "Import media and find footage using visual content, speech, and text."
 ---
 
-The **Media Library** is the left panel of the editor. It holds all the files you have imported into your project — videos, images, and audio. You can browse, preview, and drag media onto the timeline to start editing.
+Open **Library** in the left rail to browse your project media, preview it, and drag clips onto the timeline.
 
-## Importing media
+## Import media
 
-<Steps>
-  <Step title="Open the import dialog">
-    Click the **"Add"** button at the top of the Media Library, or drag files directly from your computer into the panel.
-  </Step>
-  <Step title="Choose your files">
-    Select one or more files. Cardboard supports video (MP4, WebM, MOV, MKV), audio (MP3, WAV, AAC), and images (PNG, JPG, GIF, WebP).
-  </Step>
-  <Step title="Wait for processing">
-    After import, Cardboard automatically processes your files in the background. This includes generating thumbnails, transcribing speech, analyzing video content, creating waveforms, and building search embeddings — all in parallel.
-  </Step>
-</Steps>
+Add files from your computer, or use **Cmd/Ctrl+I** with the default shortcuts. The web editor accepts:
 
-## Browsing and organizing
+| Media | Formats |
+| --- | --- |
+| Video | MP4, WebM, MOV, AVI, MKV |
+| Audio | MP3, WAV, OGG, AAC, M4A |
+| Images | JPG, PNG, GIF, WebP, HEIC/HEIF |
 
-- **Grid view** — See thumbnails of all your media at a glance
-- **Hover preview** — Hover over any video thumbnail to scrub through a preview
+Decoding also depends on the codec inside the file. The Mac app accepts additional formats.
 
-## Semantic search
+Web uploads allow up to 2.5 GB per file on Lite, Starter, and Creator, or 10 GB on Pro. See [Plans & Pricing](/account/plans-and-pricing).
 
-Cardboard automatically analyzes your media on import, which means you can search by what is _in_ the content — not just file names.
+Cardboard processes media in the background for previews, transcription, and search. You can begin arranging clips while processing continues; search results depend on the analysis that has finished.
 
-<Tabs>
-  <Tab title="Visual search">
-    Search by what you see in the video. Cardboard uses AI video analysis to understand the visual content of every clip.
+## Search project media
 
-    **Example searches:**
+Use **Search project media…** in the Library. Search modes include **All**, **Visual**, and **Speech**. Search can use visual descriptions, speech transcripts, on-screen text, and summaries.
 
-    - "city skyline"
-    - "person holding a phone"
-    - "outdoor nature shots"
-    - "close-up of a face"
-  </Tab>
-  <Tab title="Speech search">
-    Search by what is being said. Cardboard transcribes all spoken audio automatically.
+Try queries such as:
 
-    **Example searches:**
+- “Person holding a phone”
+- “City skyline”
+- “Mentions the product launch”
+- “Introduces the team”
 
-    - "mentions pricing"
-    - "talks about the product launch"
-    - "introduces the team"
-  </Tab>
-  <Tab title="Music & sound">
-    Search by the type of audio in a clip — music genre, sound effects, or ambient sounds.
+You can also ask in chat:
 
-    **Example searches:**
+> Find shots where someone is talking to camera.
 
-    - "upbeat music"
-    - "applause"
-    - "typing sounds"
-  </Tab>
-</Tabs>
+## Find music and sound effects
 
-<Tip>
-  You can also search from the AI Chat panel — try "Find all shots where someone is talking to camera" or "Show me the clips with outdoor scenery."
-</Tip>
-
-## What gets analyzed
-
-When you import a file, Cardboard runs several AI processes in the background:
-
-| Analysis           | What it does                                       | Used for                  |
-| ------------------ | -------------------------------------------------- | ------------------------- |
-| **Thumbnails**     | Generates preview frames                           | Grid view, hover preview  |
-| **Transcription**  | Converts speech to text with word-level timestamps | Speech search, captions   |
-| **Video analysis** | Identifies scenes, objects, and actions            | Visual search, AI editing |
-| **Waveform**       | Creates an audio waveform visualization            | Timeline display          |
-| **Embeddings**     | Builds semantic vectors for content                | Semantic search           |
-
-All of this happens automatically and in parallel. You can start editing immediately while processing completes in the background.
-
-## What's next?
+For library music and sound effects, use the **Audio** panel or ask the agent. This searches the built-in catalog; project-media search does not identify every ambient sound or music genre in your uploaded clips.
 
 <CardGroup cols={2}>
   <Card icon="timeline" href="/editing/timeline" title="Timeline Editing">
-    Learn how to arrange clips on the timeline.
+    Arrange the footage you find.
   </Card>
-  <Card icon="rocket" href="/first" title="Your First Video in 5 Minutes">
-    Follow the quickstart guide to make your first edit.
+  <Card title={"Music & Audio"} icon="music" href="/editing/music-and-audio">
+    Browse music and sound effects.
   </Card>
 </CardGroup>

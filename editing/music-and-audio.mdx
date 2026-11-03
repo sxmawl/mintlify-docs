@@ -1,93 +1,50 @@
 ---
-title: Music & Audio
-description: Add royalty-free music, adjust volume, and manage audio in your videos.
+title: "Music & Audio"
+description: "Add music and sound effects, mix clip audio, and clean up dialogue."
 ---
 
-Cardboard includes a built-in library of royalty-free music and sound effects you can add to any project. You can also fine-tune volume, add fades, and use AI-powered beat detection to sync your edits to the rhythm.
+In the web editor, open **Audio** in the left rail to browse music and sound effects. You can also import your own audio or ask the agent to choose from the built-in library.
 
-## Adding music and sound effects
+## Music and sound effects
 
-<Tabs>
-  <Tab title="Music library">
-    Cardboard includes **34+ royalty-free tracks** you can use in any project without worrying about licensing.
+Search the music library and filter by mood. Preview a track, then add it to your timeline and trim it to the section you want.
 
-    Browse by **genre**:
-    - Electronic, Acoustic, Cinematic, Pop, Ambient, Corporate, Rock, Folk, Funk
+Sound effects are grouped into **Input, Vintage & Film, Impact & Bass, UI & Alerts, Transition, and Foley**. Preview an effect and position it at the moment it should play.
 
-    Or browse by **mood**:
-    - Upbeat, Calm, Dramatic, Inspirational, Playful, Chill, Tense, Melancholic, Confident, Mysterious
-
-    Click any track to preview it, then drag it onto the timeline to add it to your project.
-  </Tab>
-
-  <Tab title="Sound effects">
-    Add short audio clips for emphasis and polish. Sound effects are organized by category:
-
-    - **Typing** — Keyboard clicks, mechanical keys
-    - **Camera** — Shutter sounds, focus beeps
-    - **Impact** — Hits, booms, thuds
-    - **UI** — Clicks, pops, notification tones
-    - **Transition** — Whooshes, swooshes, risers
-    - **Misc** — Miscellaneous effects
-
-    Drag any sound effect onto the timeline and position it where you want it to play.
-  </Tab>
-</Tabs>
-
-<Note>
-  All music and sound effects in the built-in library are **royalty-free**. You can use them in commercial and personal projects without additional licensing.
-</Note>
+For licensing information, see Cardboard's [Terms](https://www.cardboard.ai/terms). Make sure you have the necessary rights to audio you import yourself.
 
 ## Volume and fades
 
-### Per-clip volume
+Select an audio or video clip to adjust its audio properties. Clip volume ranges from **0% to 200%**: 0% is silent and 100% is the original level.
 
-Each clip on the timeline has its own volume control, adjustable from **0%** (silent) to **100%** (full volume). Select a clip and use the volume slider in the clip inspector to set it.
+Use fade-in and fade-out controls to ease into or out of a clip. Adjust their duration and easing, then listen to the transition.
 
-### Master volume
+Listen to dialogue and music together. Lower the music if it masks speech; do not rely on a fixed volume percentage being right for every recording.
 
-The **master volume** slider controls the overall output level of your entire project. Use it to make a final volume adjustment before exporting.
+## Clean up dialogue
 
-### Fade in and fade out
+The clip's right-click menu includes **Clean voice**, **Remove background music**, and **Split vocals and instrumental**. These cloud operations use credits and work on web projects. Preview the result before using it in the final edit.
 
-Add smooth audio fades to any clip:
+## Cut to a beat
 
-- **Fade in** — Volume ramps up gradually at the start of the clip
-- **Fade out** — Volume ramps down gradually at the end of the clip
+The agent can analyze a music track and use beat timing to arrange clips. Ask, for example:
 
-Configure the fade duration to control how long the ramp takes. Fades use smooth easing for a natural sound.
+> Sync the cuts to the beat of @music.mp3, and keep the final shot longer.
 
-<Tip>
-  When you add background music, Cardboard automatically sets it to 25–40% volume so it doesn't overpower dialogue.
-</Tip>
+Beat analysis is used by the agent; it does not add editable beat markers to the timeline. Preview and refine the cuts after the edit.
 
-## Beat detection
+## Example audio requests
 
-Cardboard's AI can analyze any audio track to detect **BPM** (beats per minute) and individual **beat timestamps**. This is useful for:
-
-- Syncing cuts to the beat of a song
-- Timing transitions to musical accents
-- Creating rhythmic montages
-
-The AI places beat markers on the timeline that you can snap clips to for perfectly timed edits.
-
-## AI prompts for audio
-
-You can manage audio from the AI Chat panel too:
-
-- "Add upbeat background music"
-- "Lower music during speaking parts"
-- "Add a click sound effect when the button appears"
-- "Fade out the music over the last 3 seconds"
-- "Remove background noise from the interview clips"
-
-## What's next?
+- “Add quiet background music under the narration.”
+- “Lower the music during the speaking parts.”
+- “Add a click sound when the button appears.”
+- “Fade out the music over the last 3 seconds.”
 
 <CardGroup cols={2}>
   <Card title="AI Voiceovers" icon="microphone" href="/learn/voiceovers">
-    Generate AI voiceovers from a text script.
+    Generate narration in the web editor.
   </Card>
   <Card title="Timeline Editing" icon="timeline" href="/editing/timeline">
-    Learn how audio tracks work on the timeline.
+    Move, trim, mute, and separate clip audio.
   </Card>
 </CardGroup>

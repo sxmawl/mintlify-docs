@@ -1,105 +1,60 @@
 ---
-title: Troubleshooting
-description: Solutions for common issues in Cardboard.
+title: "Troubleshooting"
+description: "Check common upload, export, audio, and editing problems."
 ---
 
-Running into a problem? Check the common issues below for a quick fix. If your issue isn't listed, reach out to the team and we will help you out.
+These checks cover the web editor. For problems in Claude or ChatGPT, see [connector troubleshooting](https://docs.cardboard.ai/mcp/troubleshooting).
 
-## Export issues
+## The editor will not open
 
-<AccordionGroup>
-  <Accordion title="My export seems stuck">
-    Exports run entirely in your browser, so large projects with many clips or high resolutions take longer to render. Check the progress bar — if it is still moving, the export is working. If it has stalled for several minutes:
+Use an updated Chrome or Microsoft Edge browser on a computer with WebGL2 available. Safari, Firefox, Arc, and Brave are currently blocked by the editor's compatibility check. The full editor requires a screen at least 1024 pixels wide.
 
-    - Try reducing the resolution (e.g., switch from 4K to 1080p)
-    - Close other browser tabs to free up memory
-    - Try exporting in a different format
-  </Accordion>
+## An export is slow or fails
 
-  <Accordion title="Export failed with an error">
-    - Try a different format (e.g., switch from WebM to MP4)
-    - Reduce the quality level
-    - Make sure you are using a supported browser — **Chrome** or **Edge** are recommended for best performance
-    - If the issue persists, try reloading the editor and exporting again
-  </Accordion>
+Web exports can run in the browser or cloud; they are not always local. Long timelines, high resolutions, and complex effects can take longer.
 
-  <Accordion title="Exported video has no audio">
-    - Check that the audio track is not muted on the timeline
-    - Check the clip volume — make sure it is not set to 0%
-    - Ensure the audio codec is supported by your playback device
-    - Try exporting as MP4, which has the widest audio codec support
-  </Accordion>
-</AccordionGroup>
+- Check the progress indicator and note any error message.
+- Confirm that your media finished uploading and processing.
+- Try MP4 with H.264, a lower resolution, or a lower quality setting.
+- Close unused browser tabs if your computer is low on memory.
+- If you see a plan limit, check [Plans & Pricing](/account/plans-and-pricing) and your usage in Settings.
 
-## Media issues
+If the problem persists, [contact Support](https://www.cardboard.ai/support) with the project link, browser, export settings, and error message.
 
-<AccordionGroup>
-  <Accordion title="My video won't import">
-    - Check that the file format is supported (MP4, WebM, MOV, MKV, MP3, WAV, AAC, PNG, JPG, GIF, WebP)
-    - Try re-encoding the file with a tool like [HandBrake](https://handbrake.fr) or FFmpeg
-    - Make sure the file is not corrupted — try playing it in another application first
-    - Check that the file does not exceed your plan's maximum file size
-  </Accordion>
+## A file will not import
 
-  <Accordion title="Transcription isn't working">
-    - Make sure the video has audible speech — very quiet or heavily distorted audio may not transcribe well
-    - Check that the audio track is not muted
-    - Try re-importing the file to trigger a fresh transcription
-  </Accordion>
+- Check the [supported formats](/learn/search). A supported extension can still contain an unsupported codec.
+- Play the source file in another application to check that it is readable.
+- For web uploads, check the per-file limit: 2.5 GB on Lite, Starter, and Creator; 10 GB on Pro.
+- If needed, convert a copy to a supported format and retry. Keep the original file.
 
-  <Accordion title="Video analysis is taking a long time">
-    Video analysis runs in the cloud, so processing time depends on file size and current server load. Larger files naturally take more time. Check your network connection and wait a few minutes — the analysis will complete in the background while you edit.
-  </Accordion>
-</AccordionGroup>
+## Transcription or analysis is incomplete
 
-## Editor issues
+Check that the upload and background processing have finished. Transcription needs audible speech; noise, overlapping speakers, and very quiet recordings can reduce accuracy. In the captions controls, choose the spoken language explicitly if Auto detects it incorrectly.
 
-<AccordionGroup>
-  <Accordion title="The editor is slow or laggy">
-    - Close unused browser tabs to free up memory and CPU
-    - Reduce the preview resolution in the canvas settings
-    - Use **Chrome** or **Edge** for the best performance — these browsers have the strongest support for video processing
-    - If you have many clips on the timeline, try breaking your project into shorter sections
-  </Accordion>
+If processing reports an error or remains stuck, send the error and project link to [Support](https://www.cardboard.ai/support).
 
-  <Accordion title="I can't hear audio in the editor">
-    - Check the **master volume** slider in the timeline toolbar
-    - Make sure the audio track is not muted (look for the mute icon on the track)
-    - Check your system audio settings and make sure your output device is correct
-    - Try clicking somewhere in the editor first — some browsers require a user interaction before playing audio
-  </Accordion>
+## Audio is missing or too quiet
 
-  <Accordion title="My changes disappeared">
-    - Try **Cmd+Z** (or **Ctrl+Z**) to undo — you may have accidentally deleted or moved something
-    - Projects auto-save locally, so your work should be preserved. Make sure you have the correct project open
-    - If you are signed in, check that your browser did not clear local storage or cookies
-  </Accordion>
-</AccordionGroup>
+- Check the affected clip's mute state and volume in its properties.
+- Check your computer's output device and volume, and whether the browser tab is muted.
+- Click in the editor and start playback again if the browser has blocked audio playback.
+- If only an exported file is affected, try MP4 with H.264 and test it in another player.
 
-## AI issues
+## The editor feels slow
 
-<AccordionGroup>
-  <Accordion title="The AI isn't doing what I asked">
-    - Be specific in your prompts — "Trim the first 5 seconds" works better than "make it shorter"
-    - Break complex requests into smaller steps instead of one large prompt
-    - Check [How to Talk to Cardboard](/learn/talk) for tips on writing effective prompts
-    - If the AI misunderstood, type "Undo that" and try rephrasing your request
-  </Accordion>
-</AccordionGroup>
+Close unused tabs and applications, and allow media processing to finish. Use a supported browser. If a specific clip, effect, or timeline consistently causes the problem, include that detail when contacting Support.
+
+## I cannot find my changes
+
+Make sure the correct account and project are open. Web, Mac, and connector projects are separate. Web projects sync to your account; local Mac projects stay in their `.cardboard` bundles.
+
+For an accidental manual timeline edit, try **Cmd/Ctrl+Z**. For an unwanted AI edit, ask in chat to undo or correct it. If work is missing, keep the project and original media and [contact Support](https://www.cardboard.ai/support) before clearing browser data.
+
+## The AI misunderstood a request
+
+Give a specific correction, such as “Trim the first 5 seconds” or “Move the title above the speaker.” Break a large request into smaller steps and preview after each change. See [How to Talk to Cardboard](/learn/talk).
 
 ## Still need help?
 
-<Info>
-  Email us at [founders@usecardboard.com](mailto:founders@usecardboard.com) — we typically respond within a few hours.
-</Info>
-
-## What's next?
-
-<CardGroup cols={2}>
-  <Card title="FAQ" icon="circle-question" href="/support/faq">
-    Answers to frequently asked questions.
-  </Card>
-  <Card title="How to Talk to Cardboard" icon="wand-magic-sparkles" href="/learn/talk">
-    Learn how to get the most out of AI editing.
-  </Card>
-</CardGroup>
+Visit [Support](https://www.cardboard.ai/support) or email [humans@cardboard.ai](mailto:humans@cardboard.ai). Include the steps that led to the problem and any error text.

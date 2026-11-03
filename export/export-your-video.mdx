@@ -1,67 +1,38 @@
 ---
-title: Export Your Video
-description: Render and download your finished video, or export to other editors.
+title: "Export Your Video"
+description: "Save your finished video or transfer a timeline to another editor."
 ---
 
-When your edit is ready, Cardboard renders the final video directly in your browser — no server upload needed. You can export as a video file or as a project for another editing application.
+## Export a video file
 
-## Exporting as video
+1. Click **Export** at the top right of the editor, or press **Cmd/Ctrl+E** with the default shortcuts.
+2. Choose **Video File** and select a format: MP4, WebM, MOV, or MKV.
+3. Choose resolution, frame rate, and quality. See [Formats & Quality Settings](/export/formats-and-quality).
+4. Start the export. Choose a save location if prompted; otherwise, save the downloaded file when rendering finishes.
 
-<Steps>
-  <Step title="Click the Export button">
-    Click the **Export** button in the top-right corner of the editor.
-  </Step>
+Lite includes 3 lifetime exports with a watermark, up to 1080p. Starter has unlimited watermark-free exports up to 1080p. Creator and Pro have unlimited watermark-free exports up to 4K. See [Plans & Pricing](/account/plans-and-pricing).
 
-  <Step title="Choose your format">
-    Select from MP4, WebM, MOV, or MKV. MP4 is the most widely compatible.
-  </Step>
+## Where rendering happens
 
-  <Step title="Set resolution and quality">
-    Pick your resolution (480p up to 4K) and quality level (Very Low to Very High). See [Formats & Quality Settings](/export/formats-and-quality) for detailed recommendations.
-  </Step>
+- **Web:** Cardboard can render in your browser or in the cloud. For eligible MP4 exports, both run and the first completed result is used. Other projects may use only one path. WebM, MOV, and MKV exports normally use cloud rendering.
+- **Mac app:** Videos render locally on your Mac.
+- **Claude and ChatGPT connector:** Videos render in the cloud. Follow the [connector documentation](https://docs.cardboard.ai/mcp).
 
-  <Step title="Click Export">
-    Click **Export** to start rendering. A progress bar shows real-time percentage as frames are processed.
-  </Step>
+Export time depends on the project length, resolution, effects, device, and rendering path. Check the progress indicator; if an export fails, see [Troubleshooting](/support/troubleshooting).
 
-  <Step title="Download your file">
-    When rendering is complete, your video downloads automatically. On supported browsers, Cardboard uses the File System Access API to stream directly to a file on disk, which saves memory on large projects.
-  </Step>
-</Steps>
+## Continue editing in another application
 
-<Tip>
-  For most use cases, 1080p MP4 at High quality is the sweet spot — it looks great and works on every platform.
-</Tip>
+Timeline export is available in the **web editor on Starter, Creator, and Pro**. It is not available in the Mac app.
 
-## Exporting to other editors
+| Export tab | File | Destination |
+| --- | --- | --- |
+| Final Cut / DaVinci | FCPXML | Final Cut Pro or DaVinci Resolve |
+| Premiere Pro | XML | Adobe Premiere Pro |
 
-If you want to continue editing in a desktop application, Cardboard can export your project timeline in formats that other editors understand.
+Choose the relevant tab in the Export dialog. Use the option to include media if you want the source assets alongside the timeline. Import the timeline in the destination editor and relink media if prompted.
 
-<Tabs>
-  <Tab title="Final Cut Pro / DaVinci Resolve">
-    Export as **FCPXML** to open your project in Final Cut Pro or DaVinci Resolve. Your clips, cuts, and timing are preserved.
-  </Tab>
+Timeline files are written at 30 fps. Review the imported edit before delivering it: effects, captions, and other editor-specific features may not transfer identically. Export a rendered video when you need the finished appearance.
 
-  <Tab title="Premiere Pro">
-    Export as **Premiere Pro XML** to bring your edit into Adobe Premiere Pro with all your clips and cuts intact.
-  </Tab>
-
-  <Tab title="AAF">
-    Export as **AAF** (Advanced Authoring Format) for compatibility with Avid Media Composer and other professional tools.
-  </Tab>
-</Tabs>
-
-<Note>
-  When exporting to another editor, you can configure a **custom media base directory** so the NLE can find your linked media files on disk.
-</Note>
-
-## What's next?
-
-<CardGroup cols={2}>
-  <Card title="Formats & Quality Settings" icon="sliders" href="/export/formats-and-quality">
-    Detailed breakdown of resolution, frame rate, and format options.
-  </Card>
-  <Card title="Your First Video in 5 Minutes" icon="rocket" href="/first">
-    The quickstart guide includes an export walkthrough.
-  </Card>
-</CardGroup>
+<Card title={"Formats & Quality Settings"} icon="sliders" href="/export/formats-and-quality">
+  Choose a container, codec, resolution, and frame rate.
+</Card>

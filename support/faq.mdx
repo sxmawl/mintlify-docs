@@ -1,96 +1,87 @@
 ---
-title: FAQ
-description: Frequently asked questions about Cardboard.
+title: "FAQ"
+description: "Answers about Cardboard's apps, plans, editing, uploads, and exports."
 ---
 
 ## General
 
 <AccordionGroup>
   <Accordion title="What is Cardboard?">
-    Cardboard is a browser-based AI-powered video editor. You can upload video footage, edit it using plain-English AI commands or manual timeline editing, and export professional-quality videos — all from your browser.
+    Cardboard is an AI video editor. Describe an edit, review the result, and refine it in chat or on a timeline. You can use the web editor, the Apple Silicon Mac app, or the Cardboard connector in Claude and ChatGPT.
   </Accordion>
 
   <Accordion title="Do I need to download anything?">
-    No. Cardboard runs entirely in your browser. There is nothing to install. You just need a modern browser like Chrome, Firefox, Safari, or Edge.
+    The [web editor](https://www.cardboard.ai/app/home) runs in your browser. The [Mac app](https://www.cardboard.ai/desktop) is a separate download and includes the `cb` command-line tool. To use Cardboard in Claude or ChatGPT, follow the [connector setup guide](https://docs.cardboard.ai/mcp).
   </Accordion>
 
-  <Accordion title="Does Cardboard work on mobile?">
-    Cardboard is optimized for desktop and laptop browsers. You can access it on tablets, but the full editing experience works best on a screen that is at least 13 inches wide.
+  <Accordion title="Which browsers and devices can I use?">
+    Use Chrome on a computer for the web editor. Microsoft Edge is also supported. The browser needs WebGL2; Safari, Firefox, Arc, and Brave are currently blocked by the editor's compatibility check.
+
+    The full editor needs a screen at least 1024 pixels wide. On a phone, use the [Claude or ChatGPT connector](https://docs.cardboard.ai/mcp).
   </Accordion>
 
-  <Accordion title="Is my content secure?">
-    Yes. Your media files are encrypted in transit and at rest. Cardboard does not use your content to train AI models. Only you and people you share a project with can access your files.
-  </Accordion>
-
-  <Accordion title="What browsers are supported?">
-    Cardboard works best on the latest versions of Chrome and Edge. Safari and Firefox are also supported. We recommend Chrome for the best performance.
+  <Accordion title="How does Cardboard handle my data?">
+    Read the [Privacy Policy](https://www.cardboard.ai/privacy) for how Cardboard collects, uses, protects, and retains data. The connector also has [data-handling documentation](https://docs.cardboard.ai/mcp/data).
   </Accordion>
 </AccordionGroup>
 
-## AI editing
+## Editing
 
 <AccordionGroup>
-  <Accordion title="How does AI editing work?">
-    You type a plain-English instruction in the **AI Chat** panel (for example, "trim to the best 30 seconds" or "add captions"). The AI analyzes your video, decides what to do, and applies the edits to your timeline. You can see exactly what changed and undo anything. Learn more in [How to Talk to Cardboard](/learn/talk).
+  <Accordion title="What can I ask the AI to do?">
+    Ask it to find footage, trim and arrange clips, create highlights, add captions, adjust pacing, or add music, transitions, and effects. Web image and video generation is available on Starter and above, with premium models on Creator and Pro. See [How to Talk to Cardboard](/learn/talk).
   </Accordion>
 
-  <Accordion title="What can the AI do?">
-    The AI can trim, split, and rearrange clips. It can create montages, add transitions, generate captions, adjust pacing, add music, apply effects, find specific moments in your footage, and much more. See [How to Talk to Cardboard](/learn/talk) for examples.
+  <Accordion title="Can I undo an AI edit?">
+    Ask in chat, for example “Undo that,” or describe the correction you want. Use **Cmd/Ctrl+Z** to undo your own timeline edits.
   </Accordion>
 
-  <Accordion title="Can I undo AI edits?">
-    Yes. Every AI edit can be undone with **Cmd/Ctrl + Z** or by typing "Undo that" in the AI Chat. Your original media files are never modified.
-  </Accordion>
-
-  <Accordion title="Does the AI work in languages other than English?">
-    The AI Chat currently accepts instructions in English. However, the AI can transcribe and caption videos in 20+ languages. See [Auto-Generated Captions](/learn/captions) for the full list.
-  </Accordion>
-
-  <Accordion title="How accurate are AI-generated captions?">
-    Captions are highly accurate for clear audio in supported languages. You can always review and edit captions after they are generated. Background noise or overlapping speakers may reduce accuracy.
+  <Accordion title="Which languages can I caption?">
+    Transcription supports 30 languages. Auto-detect works for many of them; choose a language explicitly if it is not detected correctly. Review names, spelling, and timing after generation, especially with background noise or overlapping speakers. See [Captions](/learn/captions).
   </Accordion>
 </AccordionGroup>
 
-## Media & projects
+## Media and projects
 
 <AccordionGroup>
-  <Accordion title="What file formats can I upload?">
-    Cardboard supports:
-    - **Video** — MP4, WebM, MOV, MKV
-    - **Audio** — MP3, WAV, AAC
-    - **Images** — PNG, JPG, GIF, WebP
+  <Accordion title="Which file formats can I upload?">
+    The web editor accepts video in MP4, WebM, MOV, AVI, and MKV; audio in MP3, WAV, OGG, AAC, and M4A; and images in JPG, PNG, GIF, WebP, and HEIC/HEIF. Whether a file decodes successfully also depends on its codec. The Mac app supports additional formats.
   </Accordion>
 
-  <Accordion title="Is there a file size limit?">
-    File size limits depend on your plan — up to 1 GB on Creator and up to 5 GB on Pro. Total storage also varies by plan. See [Plans & Pricing](/account/plans-and-pricing) for details.
+  <Accordion title="What is the upload size limit?">
+    Web uploads allow up to **2.5 GB per file** on Lite, Starter, and Creator, or **10 GB per file** on Pro. These are not local Mac import limits. See [Plans & Pricing](/account/plans-and-pricing).
   </Accordion>
 
   <Accordion title="How many projects can I have?">
-    The number of projects depends on your plan — Creator allows 5 per month, while Pro and Teams are unlimited. See [Plans & Pricing](/account/plans-and-pricing) for details.
+    Current Lite, Starter, Creator, and Pro plans have no project limit. Older subscriptions can have different limits, including a legacy Creator limit of 5 existing projects in total, not per month.
   </Accordion>
 
-  <Accordion title="Can I collaborate with others on a project?">
-    Team collaboration is available on the Teams plan. You can invite team members, share projects, and work together. See [Plans & Pricing](/account/plans-and-pricing) for details.
+  <Accordion title="Do my projects sync between the web, Mac app, and connector?">
+    No. Web projects belong to your web account, Mac projects are local bundles, and connector projects are separate. See [Manage Your Account](/account/manage-your-account).
+  </Accordion>
+
+  <Accordion title="Can other people review my video?">
+    In the web editor, create a review link for your project. Anyone with the link can watch and leave timecoded comments. This is not simultaneous editing or a shared team workspace. For team needs, [contact Support](https://www.cardboard.ai/support).
   </Accordion>
 </AccordionGroup>
 
-## Exporting
+## Exports
 
 <AccordionGroup>
-  <Accordion title="What export formats are available?">
-    You can export as MP4, WebM, MOV, or MKV. Resolutions range from 480p to 4K. See [Formats & Quality Settings](/export/formats-and-quality) for recommendations by platform.
+  <Accordion title="Which video formats and resolutions are available?">
+    Video export supports MP4, WebM, MOV, and MKV. Lite and Starter export up to 1080p; Creator and Pro export up to 4K. Available codec choices depend on the export environment. See [Formats & Quality](/export/formats-and-quality).
   </Accordion>
 
-  <Accordion title="Can I export to Premiere Pro or DaVinci Resolve?">
-    Yes. Cardboard can export an XML timeline that you can import into Adobe Premiere Pro or DaVinci Resolve for further editing. See [Export Your Video](/export/export-your-video) for details.
+  <Accordion title="Can I continue editing in Premiere Pro, Final Cut Pro, or DaVinci Resolve?">
+    On Starter and above, the web editor can export FCPXML for Final Cut Pro or DaVinci Resolve, and XML for Premiere Pro. Timeline export is not available in the Mac app. See [Export Your Video](/export/export-your-video).
   </Accordion>
 
-  <Accordion title="How long does exporting take?">
-    Export time depends on the video length, resolution, and complexity. A typical 2-minute 1080p video takes 30 seconds to a few minutes.
+  <Accordion title="How many exports are included, and is there a watermark?">
+    Lite includes **3 lifetime exports**, up to 1080p, with a Cardboard watermark. This applies to paid web Lite too. Starter, Creator, and Pro have unlimited watermark-free video exports.
   </Accordion>
 
-  <Accordion title="Is there a watermark on exported videos?">
-    There is no watermark on any paid plan. Free trial exports may include a small Cardboard watermark.
+  <Accordion title="Where does rendering happen, and how long does it take?">
+    Web exports can render in the browser or cloud. The Mac app renders locally; the Claude/ChatGPT connector renders in the cloud. Time depends on the project, resolution, effects, device, and rendering path. See [Export Your Video](/export/export-your-video).
   </Accordion>
 </AccordionGroup>
 
@@ -98,27 +89,18 @@ description: Frequently asked questions about Cardboard.
 
 <AccordionGroup>
   <Accordion title="Is there a free trial?">
-    Yes. You can try Cardboard free for 7 days with full access to all features. No credit card required to start. See [Plans & Pricing](/account/plans-and-pricing) for details.
+    There is no free trial on the web. Lite is free in the [Mac app](https://www.cardboard.ai/desktop); all web plans are paid. See [current pricing](https://www.cardboard.ai/pricing).
   </Accordion>
 
   <Accordion title="Can I cancel my subscription?">
-    Yes. You can cancel anytime from your [account settings](/account/manage-your-account). Your access continues until the end of your current billing period.
+    Yes. Open **Settings → Billing** in the web app. Cancel any time; your plan stays active until the end of the current billing period and then does not renew.
   </Accordion>
 
-  <Accordion title="What payment methods are accepted?">
-    Cardboard accepts all major credit and debit cards. Annual plans are also available at a discounted rate.
+  <Accordion title="Which payment methods are accepted?">
+    Use a payment method shown at checkout. See [pricing](https://www.cardboard.ai/pricing) for current monthly and annual options.
   </Accordion>
 </AccordionGroup>
 
-## Still have questions?
+## Still need help?
 
-Reach out to us at [founders@usecardboard.com](mailto:founders@usecardboard.com) — we typically respond within a few hours.
-
-<CardGroup cols={2}>
-  <Card title="Troubleshooting" icon="wrench" href="/support/troubleshooting">
-    Solutions for common technical issues.
-  </Card>
-  <Card title="Your First Video in 5 Minutes" icon="rocket" href="/first">
-    Follow the quickstart guide to get started.
-  </Card>
-</CardGroup>
+Visit [Support](https://www.cardboard.ai/support) or email [humans@cardboard.ai](mailto:humans@cardboard.ai). You can also check [Troubleshooting](/support/troubleshooting).

@@ -1,86 +1,41 @@
 ---
-title: Effects, Transitions & Color
-description: Add transitions, effects, color grading, and text overlays to your videos.
+title: "Effects, Transitions & Color"
+description: "Apply transitions, color looks, and keyframe animation."
 ---
 
-Cardboard includes a library of transitions, color grading presets, and keyframe animation tools to give your videos a polished look. You can apply them manually from the editor or use AI Chat to add them with a simple prompt.
+Use the editor's left rail to open **Transitions** or **Effects**. You can also ask AI Chat for a specific change, then preview the result.
 
 ## Transitions
 
-Add transitions between clips to smooth out cuts. Cardboard includes **14 transition presets** across three categories.
+Drag a transition from the panel onto the cut between two clips. The picker includes Fade, Dissolve, Fly, Push, Slide, Zoom, Light Leak, Film Burn, Glitch, Mask Glitch, Chromatic Aberration, Ink Bleed, and Radial Wipe.
 
-<Tabs>
-  <Tab title="Cinematic">
-    - **Fade** — Classic fade to/from black
-    - **Dissolve** — One clip blends smoothly into the next
-    - **Light Leak** — Bright light bloom during the transition
-    - **Film Burn** — Analog film burn effect
-    - **Cross Zoom** — Zoom-based cross dissolve
-  </Tab>
+Adjust duration and easing. Direction controls are available for directional transitions such as Fly, Push, and Slide. Mask Glitch uses a subject cutout; follow the setup shown for that transition.
 
-  <Tab title="Motion">
-    - **Fly** — Clip flies in from a direction
-    - **Push** — New clip pushes the old one off screen
-    - **Slide** — Clip slides in from the side
-    - **Zoom** — Zoom in on the cut point
-    - **Radial Wipe** — Circular wipe reveal
-  </Tab>
+Audio fades are separate from visual transitions. See [Music & Audio](/editing/music-and-audio).
 
-  <Tab title="Creative">
-    - **Glitch** — Digital glitch distortion
-    - **Chromatic Aberration** — RGB color split effect
-    - **Ink Bleed** — Ink spreading across the frame
-    - **Audio Fade** — Fades only the audio (no visual transition)
-  </Tab>
-</Tabs>
+## Color looks
 
-Each transition has configurable properties:
+Open **Effects → Color looks**. Available looks include Cinematic, Black & White, Vintage, Cool, Warm, High Contrast, Faded Film, Technicolor, and Newsreel.
 
-- **Duration** — How long the transition lasts (in seconds)
-- **Direction** — Where applicable, which direction the transition moves (left, right, up, down)
-- **Easing** — The acceleration curve (ease in, ease out, linear)
-
-To apply a transition, drag it from the transitions panel onto the cut point between two clips.
-
-## Color grading and LUTs
-
-Color grading changes the overall look and feel of your video. Cardboard includes **6 LUT presets** you can apply to any clip or adjustment layer.
-
-| Preset | Description |
-| --- | --- |
-| **Cinematic** | Warm shadows, teal highlights — the Hollywood look |
-| **Black & White** | Full desaturation with enhanced contrast |
-| **Vintage** | Faded colors with a warm, retro tone |
-| **Cool** | Blue-shifted tones for a clean, modern feel |
-| **Warm** | Golden, sun-kissed tones |
-| **High Contrast** | Deeper blacks and brighter whites |
-
-LUTs are applied via **adjustment layers** that sit above your clips on the timeline. You can control the intensity from **0** (no effect) to **1** (full strength) to dial in the exact look you want.
+Color looks use adjustment layers above your footage. Adjust the layer's duration to control which part of the video it affects, and use the intensity control from **0% to 100%** to adjust its strength.
 
 ## Keyframe animation
 
-Animate any clip property over time using keyframes. Set a value at one point, a different value at another, and Cardboard smoothly interpolates between them.
+Keyframes set a property's value at particular times. Cardboard interpolates between those values to create movement or a gradual change.
 
-Properties you can animate:
+1. Select a video, image, or graphic clip and move the playhead to the start of the change.
+2. Use the property's diamond control to add a keyframe and set the value.
+3. Move the playhead to another time, add another keyframe, and set the next value.
+4. Preview the result and adjust the timing or values.
 
-- **Opacity** — Fade clips in and out
-- **Scale** — Zoom in or out over time
-- **Rotation** — Spin or tilt a clip
-- **X / Y position** — Move a clip across the frame
+You can animate position, scale, rotation, and opacity. Video and image clips also support blur and corner-radius keyframes. Press **U** with the default shortcuts to show or hide keyframe lanes.
 
-To add a keyframe, move the playhead to where you want the animation to start, set your property value, then move ahead and set a new value. Cardboard creates a smooth animation between the two points.
+## Example requests
 
-<Tip>
-  You can use AI Chat for effects too — try "Add a fade transition between every clip", "Apply cinematic color grade", or "Zoom in on the subject over 2 seconds."
-</Tip>
+- “Add a dissolve between the interview and the B-roll.”
+- “Apply a warm color look to this section.”
+- “Zoom in slowly on the subject over 2 seconds.”
 
-## What's next?
-
-<CardGroup cols={2}>
-  <Card title="Music & Audio" icon="music" href="/editing/music-and-audio">
-    Add background music and sound effects.
-  </Card>
-  <Card title="How to Talk to Cardboard" icon="list-check" href="/learn/talk">
-    Prompt tips and examples for effects and transitions.
-  </Card>
-</CardGroup>
+<Card title="Timeline Editing" icon="timeline" href="/editing/timeline">
+  Arrange clips and adjustment layers.
+</Card>

@@ -89,13 +89,21 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:founders@usecardboard.com"
+        "href": "https://www.cardboard.ai/support"
+      },
+      {
+        "href": "https://www.cardboard.ai/pricing",
+        "label": "Pricing"
+      },
+      {
+        "href": "https://docs.cardboard.ai/mcp",
+        "label": "Connector docs"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Open Cardboard",
-      "href": "https://usecardboard.com/app/home"
+      "href": "https://www.cardboard.ai/app/home"
     }
   },
   "footer": {
